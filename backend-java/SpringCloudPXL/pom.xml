@@ -25,6 +25,7 @@
         <module>employee-service</module>
         <module>department-service</module>
         <module>organization-services</module>
+        <module>notification-services</module>
     </modules>
     <scm>
         <connection/>

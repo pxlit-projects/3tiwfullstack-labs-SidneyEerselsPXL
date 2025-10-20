@@ -1,13 +1,17 @@
 package be.pxl.services;
 
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
 /**
  * Hello world!
  *
  */
-public class App 
+@SpringBootApplication
+public class NotificationServicesApplication
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        SpringApplication.run(NotificationServicesApplication.class, args);
     }
 }

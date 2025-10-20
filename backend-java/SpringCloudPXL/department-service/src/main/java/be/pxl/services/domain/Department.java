@@ -20,6 +20,7 @@ public class Department {
     private Long id;
     private Long organizationId;
     private String name;
+    @Transient
     private List<Employee> employees;
     private String position;
 

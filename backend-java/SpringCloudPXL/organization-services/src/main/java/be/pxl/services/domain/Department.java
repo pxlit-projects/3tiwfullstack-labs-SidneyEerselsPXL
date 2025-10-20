@@ -8,20 +8,18 @@ import lombok.NoArgsConstructor;
 
 import java.util.List;
 
-@Entity
-@Table(name = "Organization")
-@NoArgsConstructor
-@AllArgsConstructor
-@Builder
 @Data
-public class Organization {
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
+public class Department {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
+    private Long organizationId;
     private String name;
-    private String address;
     @Transient
     private List<Employee> employees;
-    @Transient
-    private List<Department> departments;
+    private String position;
+
 }
